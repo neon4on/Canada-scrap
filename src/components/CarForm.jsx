@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import { TextField, Button, Container, Typography, Box } from '@mui/material';
+import { TextField, Button, Container, Box, Typography } from '@mui/material';
 
 function CarForm() {
   const [formData, setFormData] = useState({
-    fullName: '',
+    name: '',
     carYear: '',
     carModel: '',
     city: '',
@@ -14,44 +13,28 @@ function CarForm() {
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:5000/submit', formData);
-      alert('Your information has been successfully submitted!');
-      setFormData({
-        fullName: '',
-        carYear: '',
-        carModel: '',
-        city: '',
-        email: '',
-        phone: '',
-        details: '',
-      });
-    } catch (error) {
-      console.error('Error submitting form', error);
-    }
+    // Логика отправки данных формы
+    console.log('Form submitted', formData);
   };
 
   return (
-    <Container>
+    <Container sx={{ paddingY: { xs: 4, md: 6 }, backgroundColor: 'white' }}>
       <Typography variant="h4" gutterBottom>
         Submit Your Car Information
       </Typography>
       <Box
         component="form"
         onSubmit={handleSubmit}
-        sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+        sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
         <TextField
-          label="Full Name"
-          name="fullName"
-          value={formData.fullName}
+          label="Name"
+          name="name"
+          value={formData.name}
           onChange={handleChange}
           required
         />
@@ -101,7 +84,11 @@ function CarForm() {
           multiline
           rows={4}
         />
-        <Button type="submit" variant="contained">
+        {/* Изменяем кнопку на контрастный цвет (салатовый) */}
+        <Button
+          type="submit"
+          variant="contained"
+          sx={{ backgroundColor: '#4caf50', color: 'white' }}>
           Submit
         </Button>
       </Box>

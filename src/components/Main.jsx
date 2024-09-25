@@ -1,36 +1,52 @@
 import React from 'react';
-import { Container, Typography } from '@mui/material';
-import CarForm from './CarForm';
-import HowToScrap from './HowToScrap';
+import { Container } from '@mui/material';
+import AboutUs from './AboutUs';
+import HowItWorks from './HowItWorks';
+import Services from './Services';
+import WhyChooseUs from './WhyChooseUs';
 import FAQ from './FAQ';
+import ContactUs from './ContactUs';
 import CarSlider from './CarSlider';
+import CarForm from './CarForm';
 
 function Main() {
   return (
-    <Container>
-      <Typography variant="h2" gutterBottom>
-        Welcome to Scrap Car Canada
-      </Typography>
-      <Typography variant="body1" gutterBottom>
-        Scrap Car Canada helps you get rid of your car quickly and for free. We offer an instant
-        quote and send a tow truck to pick up your car promptly.
-      </Typography>
-      <Typography variant="body1" gutterBottom>
-        Fill out the form, and we will contact you to confirm the details.
-      </Typography>
+    <>
+      {/* Секция About Us с якорем */}
+      <Container id="about" sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 } }}>
+        <AboutUs />
+      </Container>
 
-      {/* Слайдер с фотографиями */}
-      <CarSlider />
+      {/* Секция How It Works с якорем */}
+      <Container id="how-it-works" sx={{ backgroundColor: '#e0f7e4', paddingY: { xs: 4, md: 6 } }}>
+        <HowItWorks />
+      </Container>
 
-      {/* Форма для заполнения данных */}
-      <CarForm />
+      {/* Форма с якорем */}
+      <Container id="offer" sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 } }}>
+        <CarForm />
+      </Container>
 
-      {/* Секция HowToScrap с отступами */}
-      <HowToScrap />
+      {/* Секция Services с якорем */}
+      <Container id="services" sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 } }}>
+        <Services />
+      </Container>
 
-      {/* FAQ с увеличенными отступами */}
-      <FAQ />
-    </Container>
+      {/* Секция Why Choose Us с якорем */}
+      <Container id="why-choose-us" sx={{ backgroundColor: '#e0f7e4', paddingY: { xs: 4, md: 6 } }}>
+        <WhyChooseUs />
+      </Container>
+
+      {/* Секция FAQ с якорем */}
+      <Container id="faq" sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 } }}>
+        <FAQ />
+      </Container>
+
+      {/* Секция Contact Us с якорем */}
+      <Container id="contact" sx={{ backgroundColor: '#e0f7e4', paddingY: { xs: 4, md: 6 } }}>
+        <ContactUs />
+      </Container>
+    </>
   );
 }
 

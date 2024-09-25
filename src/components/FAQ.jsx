@@ -1,71 +1,82 @@
 import React from 'react';
-import { Accordion, AccordionSummary, AccordionDetails, Typography, Box } from '@mui/material';
+import {
+  Container,
+  Typography,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function FAQ() {
   return (
-    <Box sx={{ marginBottom: 8 }}>
-      {' '}
-      {/* Увеличенный нижний отступ */}
-      <Typography variant="h4" gutterBottom>
-        Frequently Asked Questions (FAQ)
+    <Container
+      sx={{
+        backgroundColor: 'white',
+        paddingY: { xs: 4, md: 6 },
+      }}>
+      <Typography
+        variant="h4"
+        sx={{ fontSize: { xs: '1.5rem', md: '2rem' }, marginBottom: { xs: 2, md: 4 } }}>
+        Frequently Asked Questions
       </Typography>
+
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>How long does the car scrapping process take?</Typography>
+          <Typography>What types of vehicles do you accept?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            The process usually takes 1-2 days, depending on your location and tow truck
-            availability.
+            We accept cars, trucks, SUVs, and vans in any condition—whether they’re running or not.
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>Can I get a quote without sending pictures of my car?</Typography>
+          <Typography>Do I need to have the title for the car?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Yes, you can receive a quote without pictures, but having pictures can help us give you
-            a more accurate estimate.
+            Yes, proof of ownership, such as the vehicle title, is required to sell your car.
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>Do I need to sign any documents during car pick-up?</Typography>
+          <Typography>How long does the process take?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Yes, you will need to sign ownership transfer documents and hand over the keys to the
-            vehicle.
+            The process is quick and can be completed in as little as 24 hours, from quote to
+            pickup.
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>What should I do with my license plates and personal belongings?</Typography>
+          <Typography>Do you buy cars that are still drivable?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Make sure to remove your license plates and all personal belongings from the car. We do
-            not accept vehicles with garbage or leftover items.
+            Yes, even if your car is still running, we’ll purchase it for scrap.
           </Typography>
         </AccordionDetails>
       </Accordion>
+
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>Is the towing service really free?</Typography>
+          <Typography>What if my car is still in good condition?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Yes, the towing service is completely free, and it is included in our service when you
-            scrap your car with us.
+            We buy cars for scrap and recycling, regardless of their condition.
           </Typography>
         </AccordionDetails>
       </Accordion>
-    </Box>
+    </Container>
   );
 }
 
