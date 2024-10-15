@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, Container, Box, Typography } from '@mui/material';
+import axios from 'axios'; // Для отправки данных на сервер
 
 function CarForm() {
   const [formData, setFormData] = useState({
@@ -12,14 +13,73 @@ function CarForm() {
     details: '',
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const [errors, setErrors] = useState({});
+
+  // Валидация полей
+  const validate = () => {
+    let tempErrors = {};
+
+    // Валидация поля Name (только слова)
+    if (!/^[A-Za-z\s]+$/.test(formData.name)) {
+      tempErrors.name = 'Name can only contain letters and spaces';
+    }
+
+    // Валидация года (4 цифры)
+    if (!/^\d{4}$/.test(formData.carYear)) {
+      tempErrors.carYear = 'Car year must be exactly 4 digits';
+    }
+
+    // Валидация поля City (только слова)
+    if (!/^[A-Za-z\s]+$/.test(formData.city)) {
+      tempErrors.city = 'City can only contain letters and spaces';
+    }
+
+    // Валидация номера телефона (формат телефона)
+    if (
+      !/^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
+        formData.phone,
+      )
+    ) {
+      tempErrors.phone = 'Phone number is not valid';
+    }
+
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    // Запрещаем ввод недопустимых символов
+    if (name === 'name' || name === 'city') {
+      if (/^[A-Za-z\s]*$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } else if (name === 'carYear') {
+      if (/^\d{0,4}$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } else if (name === 'phone') {
+      if (/^[0-9+\-\(\)\s]*$/.test(value)) {
+        setFormData({ ...formData, [name]: value });
+      }
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Логика отправки данных формы
-    console.log('Form submitted', formData);
+    if (validate()) {
+      try {
+        const response = await axios.post('http://localhost:5000/submit', formData); // Меняем URL на адрес бэкенда
+        console.log('Form submitted successfully', response.data);
+      } catch (error) {
+        console.error('Error submitting form', error);
+      }
+    } else {
+      console.log('Validation failed');
+    }
   };
 
   return (
@@ -37,6 +97,8 @@ function CarForm() {
           value={formData.name}
           onChange={handleChange}
           required
+          error={!!errors.name}
+          helperText={errors.name}
         />
         <TextField
           label="Car Year"
@@ -44,7 +106,9 @@ function CarForm() {
           value={formData.carYear}
           onChange={handleChange}
           required
-          type="number"
+          type="text"
+          error={!!errors.carYear}
+          helperText={errors.carYear}
         />
         <TextField
           label="Car Model"
@@ -59,6 +123,8 @@ function CarForm() {
           value={formData.city}
           onChange={handleChange}
           required
+          error={!!errors.city}
+          helperText={errors.city}
         />
         <TextField
           label="Email"
@@ -74,7 +140,8 @@ function CarForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          type="tel"
+          error={!!errors.phone}
+          helperText={errors.phone}
         />
         <TextField
           label="Additional Details"
@@ -84,7 +151,6 @@ function CarForm() {
           multiline
           rows={4}
         />
-        {/* Изменяем кнопку на контрастный цвет (салатовый) */}
         <Button
           type="submit"
           variant="contained"
