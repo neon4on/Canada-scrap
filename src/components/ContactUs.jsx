@@ -16,8 +16,8 @@ function ContactUs() {
       </Typography>
 
       <Box>
-        <Typography variant="body1">Phone: Contact us at [phone number].</Typography>
-        <Typography variant="body1">Email: Email us at [email address].</Typography>
+        <Typography variant="body1">Phone: Contact us at +1-647-628-3037.</Typography>
+        <Typography variant="body1">Email: Email us at canadascrapcars@gmail.com.</Typography>
         <Typography variant="body1">
           Location: We serve Toronto and surrounding areas, providing fast and reliable scrap car
           removal services.
