@@ -22,7 +22,7 @@ function AboutUs() {
           </Typography>
           <Typography variant="body1" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>
           We understand how frustrating it can be to deal with potential buyers who aren’t serious
-          about your car. At [Your Company Name], we offer a simple, stress-free alternative.
+          about your car. At Canada Scrap Cars, we offer a simple, stress-free alternative.
           Whether your vehicle is old, damaged, or simply no longer roadworthy, we specialize in
           buying scrap cars in Toronto and surrounding areas. Forget about long phone calls and
           endless emails—we’ll get you the best cash offer by collecting relevant information about

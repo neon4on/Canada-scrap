@@ -6,7 +6,6 @@ import Services from './Services';
 import WhyChooseUs from './WhyChooseUs';
 import FAQ from './FAQ';
 import ContactUs from './ContactUs';
-import CarSlider from './CarSlider';
 import CarForm from './CarForm';
 
 function Main() {
