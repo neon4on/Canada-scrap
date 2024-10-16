@@ -6,7 +6,7 @@ function Services() {
     <Container sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 } }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-          <img src="src/images/CanadaScrap2.jpg" alt="Services" style={{ width: '100%', height: 'auto' }} />
+          <img src="/assets/images/CanadaScrap2.jpg" alt="Services" style={{ width: '100%', height: 'auto' }} />
         </Grid>
         <Grid item xs={12} md={6}>
           <Typography variant="h4" sx={{ fontSize: { xs: '1.5rem', md: '2rem' }, marginBottom: { xs: 2, md: 4 } }}>

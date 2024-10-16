@@ -30,7 +30,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Обработчик для записи в БД и отправки письма
-app.post('/submit', async (req, res) => {
+app.post('/api/submit', async (req, res) => {
   const {
     name,
     carMake,

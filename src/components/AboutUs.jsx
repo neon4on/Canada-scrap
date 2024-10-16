@@ -11,7 +11,7 @@ function AboutUs() {
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           {/* Изображение слева */}
-          <img src="src/images/CanadaScrap1.jpg" alt="Scrap Car" style={{ width: '100%' }} />
+          <img src="/assets/images/CanadaScrap1.jpg" alt="Scrap Car" style={{ width: '100%' }} />
         </Grid>
         <Grid item xs={12} md={6}>
           {/* Текст справа */}
