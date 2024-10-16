@@ -100,7 +100,7 @@ function CarForm() {
           isDrivable: formData.isDrivable === 'true'  // Преобразование в boolean
         };
 
-        const response = await axios.post('http://localhost:5000/submit', preparedData);
+        const response = await axios.post('/api/submit', preparedData);
         console.log('Form submitted successfully', response.data);
       } catch (error) {
         console.error('Error submitting form', error);
