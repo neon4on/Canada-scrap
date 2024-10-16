@@ -12,28 +12,28 @@ function CarBrandsTicker() {
           width: 'fit-content', // Делаем ширину под содержимое
         }}
       >
-        <img src="/assets/images/brands/bmw.svg" alt="BMW" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/chevrolet.svg" alt="Chevrolet" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/ford.svg" alt="Ford" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/honda.svg" alt="Honda" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/nissan.svg" alt="Nissan" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/volkswagen.svg" alt="Volkswagen" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/subaru.svg" alt="Subaru" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/skoda.svg" alt="Skoda" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/opel.svg" alt="Opel" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/gmc.svg" alt="GMC" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/bmw.svg" alt="BMW" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/chevrolet.svg" alt="Chevrolet" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/ford.svg" alt="Ford" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/honda.svg" alt="Honda" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/nissan.svg" alt="Nissan" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/volkswagen.svg" alt="Volkswagen" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/subaru.svg" alt="Subaru" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/skoda.svg" alt="Skoda" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/opel.svg" alt="Opel" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/gmc.svg" alt="GMC" style={{ width: 100, marginRight: 40 }} />
 
         {/* Клонируем все элементы для бесшовного эффекта */}
-        <img src="/assets/images/brands/bmw.svg" alt="BMW" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/chevrolet.svg" alt="Chevrolet" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/ford.svg" alt="Ford" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/honda.svg" alt="Honda" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/nissan.svg" alt="Nissan" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/volkswagen.svg" alt="Volkswagen" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/subaru.svg" alt="Subaru" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/skoda.svg" alt="Skoda" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/opel.svg" alt="Opel" style={{ width: 100, marginRight: 40 }} />
-        <img src="/assets/images/brands/gmc.svg" alt="GMC" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/bmw.svg" alt="BMW" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/chevrolet.svg" alt="Chevrolet" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/ford.svg" alt="Ford" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/honda.svg" alt="Honda" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/nissan.svg" alt="Nissan" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/volkswagen.svg" alt="Volkswagen" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/subaru.svg" alt="Subaru" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/skoda.svg" alt="Skoda" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/opel.svg" alt="Opel" style={{ width: 100, marginRight: 40 }} />
+        <img src="/images/brands/gmc.svg" alt="GMC" style={{ width: 100, marginRight: 40 }} />
       </Box>
 
       <style jsx>{`
