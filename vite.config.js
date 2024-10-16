@@ -1,7 +1,14 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
+    },
+    assetsInlineLimit: 0, // Убедись, что файлы не инлайнатся
+  },
+  publicDir: 'src/images'  // Указание, где лежат статические файлы
 })
