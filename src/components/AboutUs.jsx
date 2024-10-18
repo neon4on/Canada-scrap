@@ -9,15 +9,14 @@ function AboutUs() {
         paddingY: { xs: 4, md: 6 },
       }}>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={6}>
-          {/* Изображение слева */}
-          <img src="/images/CanadaScrap1.jpg" alt="Scrap Car" style={{ width: '100%' }} />
-        </Grid>
+      <Grid item xs={12} md={6}>
+        <img src="/images/CanadaScrap1.jpg" alt="Scrap Car" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+      </Grid>
         <Grid item xs={12} md={6}>
           {/* Текст справа */}
           <Typography
-            variant="h4"
-            sx={{ fontSize: { xs: '1.5rem', md: '2rem' }, marginBottom: { xs: 2, md: 4 } }}>
+            variant="h3"
+            sx={{ fontSize: { xs: '1.2rem', md: '1.5rem' }, marginBottom: { xs: 2, md: 4 } }}>
             Your Trusted Scrap Car Buyer in Toronto
           </Typography>
           <Typography variant="body1" sx={{ fontSize: { xs: '1rem', md: '1.25rem' } }}>

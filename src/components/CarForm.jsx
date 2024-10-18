@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { TextField, Button, Container, Box, Typography, Grid, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
 import axios from 'axios';
 import CarBrandsTicker from './CarBrandsTicker'; // Импортируем компонент бегущей строки
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function CarForm() {
   const [formData, setFormData] = useState({
@@ -102,8 +104,10 @@ function CarForm() {
 
         const response = await axios.post('/api/submit', preparedData);
         console.log('Form submitted successfully', response.data);
+        toast.success('Thank you for your request! Our specialist will contact you shortly.');
       } catch (error) {
         console.error('Error submitting form', error);
+        toast.error('Error submitting form. Please try again.');
       }
     } else {
       console.log('Validation failed');
@@ -240,6 +244,8 @@ function CarForm() {
           Submit Your Car Information
         </Button>
       </Box>
+
+      <ToastContainer />
     </Container>
   );
 }

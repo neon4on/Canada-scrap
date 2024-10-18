@@ -49,7 +49,7 @@ function Header() {
   );
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#333', paddingY: { xs: 1, md: 2 } }}>
+    <AppBar position="sticky" sx={{ backgroundColor: '#333', paddingY: { xs: 1, md: 2 } }}>
       <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Логотип с машиной */}
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
