@@ -10,7 +10,7 @@ function AboutUs() {
       }}>
       <Grid container spacing={2}>
       <Grid item xs={12} md={6}>
-        <img src="/images/CanadaScrap1.jpg" alt="Scrap Car" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+        <img src="/images/CanadaScrap1.jpg" alt="Scrap Car"     style={{ width: '100%', height: '300px', objectFit: 'contain' }} />
       </Grid>
         <Grid item xs={12} md={6}>
           {/* Текст справа */}

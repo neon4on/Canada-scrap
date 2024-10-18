@@ -27,7 +27,7 @@ function WhyChooseUs() {
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
-          <img src="/images/CanadaScrap3.jpg" alt="Why Choose Us" style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+          <img src="/images/CanadaScrap3.jpg" alt="Why Choose Us" style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }} />
         </Grid>
       </Grid>
     </Container>
