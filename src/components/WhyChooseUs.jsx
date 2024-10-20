@@ -3,8 +3,8 @@ import { Container, Typography, Box, Grid } from '@mui/material';
 
 function WhyChooseUs() {
   return (
-    <Container sx={{ backgroundColor: '#e0f7e4', paddingY: { xs: 4, md: 6 } }}>
-      <Grid container spacing={2} alignItems="stretch">
+    <Container sx={{ backgroundColor: '#e0f7e4', paddingY: { xs: 4, md: 6 }, maxWidth: '1200px' }}>
+      <Grid container spacing={2} alignItems="stretch"> 
         <Grid item xs={12} md={6}>
           <Box
             sx={{
@@ -23,30 +23,52 @@ function WhyChooseUs() {
             <Box mb={3}>
               <Typography variant="h6">Top Cash Payouts</Typography>
               <Typography variant="body1">
-                We offer some of the best payouts for scrap cars in Toronto, ensuring you get a great
-                deal. Our valuation process is transparent, giving you confidence in the offer you receive.
+                We offer some of the best payouts for scrap cars in Toronto, ensuring you get a great deal.
               </Typography>
             </Box>
 
             <Box mb={3}>
               <Typography variant="h6">Fast and Convenient</Typography>
               <Typography variant="body1">
-                We make the process quick and easy. From instant quotes to same-day or next-day pickups,
-                we work around your schedule. Our team is always punctual, and you can count on us for
-                reliable service.
-              </Typography>
-              <Typography variant="body1">
-                Whether you’re selling a running vehicle or a scrap one, we ensure a smooth process
-                with no hidden fees or conditions.
+                We make the process quick and easy. From instant quotes to same-day or next-day pickups, we work around your schedule.
               </Typography>
             </Box>
+
+            <Box mb={3}>
+              <Typography variant="h6">Eco-Friendly Disposal</Typography>
+              <Typography variant="body1">
+                Our commitment to environmental sustainability means we recycle every vehicle we purchase responsibly. All usable parts are reused, and the rest is recycled in an eco-friendly manner.
+              </Typography>
+            </Box>
+
+            <Box mb={3}>
+              <Typography variant="h6">Trusted by Thousands</Typography>
+              <Typography variant="body1">
+                With years of experience and thousands of satisfied customers, we are the go-to choice for scrap car buyers in Toronto. Join our growing list of happy clients who have sold their cars to us quickly and effortlessly.
+              </Typography>
+            </Box>
+
+            <Box mb={3}>
+              <Typography variant="h6">No Hidden Fees</Typography>
+              <Typography variant="body1">
+                We pride ourselves on transparency, and that means no hidden fees or charges. What we quote is exactly what you’ll receive, without surprises.
+              </Typography>
+            </Box>
+
+            <Box mb={3}>
+              <Typography variant="h6">Professional Team</Typography>
+              <Typography variant="body1">
+                Our dedicated team of professionals is ready to help you through every step of the process, ensuring that selling your scrap car is as easy and stress-free as possible.
+              </Typography>
+            </Box>
+
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
           <img
             src="/images/CanadaScrap3.jpg"
             alt="Why Choose Us"
-            style={{ width: '100%', maxHeight: '300px', objectFit: 'contain' }}
+            style={{ width: '100%', height: 'auto', objectFit: 'contain' }} 
           />
         </Grid>
       </Grid>
