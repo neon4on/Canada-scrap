@@ -13,6 +13,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CarIcon from '@mui/icons-material/DirectionsCar';
+import CarSlider from './CarSlider';
 
 function Header() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -49,6 +50,7 @@ function Header() {
   );
 
   return (
+    <>
     <AppBar position="sticky" sx={{ backgroundColor: '#333', paddingY: { xs: 1, md: 2 } }}>
       <Toolbar sx={{ justifyContent: 'space-between', alignItems: 'center' }}>
         {/* Логотип с машиной */}
@@ -91,6 +93,8 @@ function Header() {
         </Drawer>
       </Toolbar>
     </AppBar>
+    <CarSlider />
+    </>
   );
 }
 

@@ -53,11 +53,6 @@ function Services() {
               that all paperwork is completed efficiently and that your vehicle is picked up without delay. 
               We pride ourselves on providing fast, reliable service.
             </Typography>
-
-            <Typography variant="body1" sx={{ flexGrow: 1 }}>
-              We serve the greater Toronto area and beyond, making it convenient for you to sell your car wherever you are. 
-              We can often arrange same-day pickups, making the entire experience quick and effortless.
-            </Typography>
           </Box>
         </Grid>
       </Grid>
