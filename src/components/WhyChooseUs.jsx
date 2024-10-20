@@ -35,23 +35,9 @@ function WhyChooseUs() {
             </Box>
 
             <Box mb={3}>
-              <Typography variant="h6">Eco-Friendly Disposal</Typography>
-              <Typography variant="body1">
-                Our commitment to environmental sustainability means we recycle every vehicle we purchase responsibly. All usable parts are reused, and the rest is recycled in an eco-friendly manner.
-              </Typography>
-            </Box>
-
-            <Box mb={3}>
               <Typography variant="h6">Trusted by Thousands</Typography>
               <Typography variant="body1">
                 With years of experience and thousands of satisfied customers, we are the go-to choice for scrap car buyers in Toronto. Join our growing list of happy clients who have sold their cars to us quickly and effortlessly.
-              </Typography>
-            </Box>
-
-            <Box mb={3}>
-              <Typography variant="h6">No Hidden Fees</Typography>
-              <Typography variant="body1">
-                We pride ourselves on transparency, and that means no hidden fees or charges. What we quote is exactly what you’ll receive, without surprises.
               </Typography>
             </Box>
 

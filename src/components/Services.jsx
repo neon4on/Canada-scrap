@@ -48,9 +48,15 @@ function Services() {
               We ensure that your car is responsibly recycled and that no reusable parts go to waste.
             </Typography>
 
+            <Typography variant="body1" sx={{ flexGrow: 1, marginBottom: 2 }}>
+              Our team of experienced professionals will walk you through every step of the process, ensuring
+              that all paperwork is completed efficiently and that your vehicle is picked up without delay. 
+              We pride ourselves on providing fast, reliable service.
+            </Typography>
+
             <Typography variant="body1" sx={{ flexGrow: 1 }}>
-              Our team also provides towing services completely free of charge, so you don’t have to worry about transport.
-              With years of experience, we guarantee a seamless and stress-free process from start to finish.
+              We serve the greater Toronto area and beyond, making it convenient for you to sell your car wherever you are. 
+              We can often arrange same-day pickups, making the entire experience quick and effortless.
             </Typography>
           </Box>
         </Grid>
