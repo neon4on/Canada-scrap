@@ -3,7 +3,7 @@ import { Container, Typography, Box, Grid } from '@mui/material';
 
 function Services() {
   return (
-    <Container sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 } }}>
+    <Container sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 }, maxWidth: '1200px' }}>
       <Grid container spacing={2} alignItems="stretch">
         <Grid item xs={12} md={6}>
           <img
@@ -38,15 +38,14 @@ function Services() {
             </Typography>
 
             <Typography variant="body1" sx={{ flexGrow: 1, marginBottom: 2 }}>
-              We also specialize in recycling, ensuring that every vehicle we purchase is disposed
-              of in an environmentally friendly way. From reusing parts to responsibly handling
-              scrap materials, we make sure nothing goes to waste.
+              Whether your car is an old beater or has simply become too expensive to repair, 
+              we make it easy for you to sell your vehicle without any hassle. Just call us or fill out 
+              our form online, and we’ll handle the rest.
             </Typography>
 
             <Typography variant="body1" sx={{ flexGrow: 1 }}>
-              No matter the condition of your car, we’ll make the process smooth and convenient.
-              Whether it’s a broken-down vehicle or an old car taking up space, our team will help
-              you through every step of the process.
+              In addition to offering top cash payouts, we are committed to eco-friendly car disposal. 
+              We ensure that your car is responsibly recycled and that no reusable parts go to waste.
             </Typography>
           </Box>
         </Grid>
