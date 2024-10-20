@@ -4,17 +4,17 @@ import { Container, Typography, Box, Grid } from '@mui/material';
 function AboutUs() {
   return (
     <Container sx={{ backgroundColor: 'white', paddingY: { xs: 4, md: 6 }, maxWidth: '1200px' }}>
-      <Grid container spacing={2} sx={{ height: '1024px' }}> {/* Фиксируем высоту 1024px */}
-        <Grid item xs={12} md={6}>
-          {/* Картинка занимает всю высоту блока */}
+      <Grid container spacing={2} sx={{ height: 'auto', minHeight: '1024px' }}> {/* Контейнер с минимальной высотой */}
+        <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
+          {/* Картинка сохраняет пропорции */}
           <img
             src="/images/CanadaScrap1.jpg"
             alt="Scrap Car"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            style={{ width: '100%', height: 'auto', objectFit: 'contain' }} // Сохраняем пропорции изображения
           />
         </Grid>
-        <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
-          {/* Текст, который равномерно распределён по высоте */}
+        <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          {/* Текст, выровненный по высоте изображения */}
           <Box>
             <Typography variant="h4" sx={{ fontSize: { xs: '1.5rem', md: '2rem' }, marginBottom: 2 }}>
               Your Trusted Scrap Car Buyer in Toronto
