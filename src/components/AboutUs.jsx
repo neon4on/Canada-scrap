@@ -24,13 +24,6 @@ function AboutUs() {
               about your car. At Canada Scrap Cars, we offer a simple, stress-free alternative.
             </Typography>
             <Typography variant="body1" sx={{ fontSize: { xs: '1rem', md: '1.25rem' }, marginBottom: 2 }}>
-              Whether your vehicle is old, damaged, or simply no longer roadworthy, we specialize in
-              buying scrap cars in Toronto and surrounding areas. Forget about long phone calls and
-              endless emails—we’ll get you the best cash offer by collecting relevant information
-              about your vehicle. With years of experience, we’re committed to providing top-notch
-              customer service and hassle-free transactions.
-            </Typography>
-            <Typography variant="body1" sx={{ fontSize: { xs: '1rem', md: '1.25rem' }, marginBottom: 2 }}>
               Our process is simple, straightforward, and designed with your convenience in mind. We take
               care of everything—from initial consultation to final payment—so you don’t have to worry
               about a thing. Plus, our customer service is always available to help you with any questions
